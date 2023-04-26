@@ -1,12 +1,12 @@
 package IOStream;
 
-public class StudentClass {
+public class Student {
 	private String name;
-	private boolean gender;
+	private boolean gender; // true: male, false: female
 	private int age;
 	private float grade;
 
-	public StudentClass(String name, boolean gender, int age, float grade) {
+	public Student(String name, boolean gender, int age, float grade) {
 		super();
 		this.name = name;
 		this.gender = gender;
@@ -44,11 +44,6 @@ public class StudentClass {
 
 	public void setGrade(float grade) {
 		this.grade = grade;
-	}
-
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
 	}
 
 }
