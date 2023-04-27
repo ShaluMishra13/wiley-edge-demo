@@ -16,9 +16,9 @@ class Employee{
 	}
 }
 class emplyimpl{
-	public void show(Employee emp) {
+	public void show(Employee e) {
 		System.out.println("calling show method");
-		System.out.println("Name:"+emp.getname()+" age:"+emp.getage());
+		System.out.println("Name:"+e.getname()+" age:"+e.getage());
 	}
 }
 

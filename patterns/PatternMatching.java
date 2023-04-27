@@ -7,8 +7,8 @@ public class PatternMatching {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		String input="The key to learn programming is consistent practice";
-		Pattern pat=Pattern.compile("learn");
+		String input="The key to LEARN programming is consistent practice";
+		Pattern pat=Pattern.compile("learn",Pattern.CASE_INSENSITIVE);
 		Matcher matcher=pat.matcher(input);
 		if(matcher.find()) {
 			int strt=matcher.start();

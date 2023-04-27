@@ -4,13 +4,14 @@ public class string_basics {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		String s1="Wiely";
+		String s1="Wiley";
 		String s2="Wiley";
 		String s3= new String("Wiley");
 		String s4=new String("Wiley");
 		System.out.println(s1==s2);
 		System.out.println(s3==s2);
-		System.out.println(s4==s1);
+		System.out.println(s4==s3);
+		System.out.println(s4.equals(s3));
 		
 		String str="Iam java devloper ";
 		String str1="Python";

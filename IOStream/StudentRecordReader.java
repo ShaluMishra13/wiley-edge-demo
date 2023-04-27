@@ -43,7 +43,7 @@ public class StudentRecordReader {
 //			System.exit(0);
 //		}
 		
-		String inputFile = "C:\\Users\\SHALU\\OneDrive\\Desktop\\dataforder\\student.txt";
+		String inputFile = "C:\\Users\\SHALU\\eclipse-workspace1\\wileyjava\\Book2.txt";
 		
 		try {
 			StudentRecordReader reader = new StudentRecordReader(inputFile);
