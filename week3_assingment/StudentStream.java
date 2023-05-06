@@ -13,14 +13,14 @@ public static void main(String []args) {
 	        students.add(new Student(6, "Akash", 90, "A"));
 	        students.add(new Student(7, "Aman", 73, "B"));
 
-	        // Sort the list in descending order based on age using the Stream API
+	        
 	        ArrayList<Student> sortedStudents = students.stream()
 	                .sorted(Comparator.comparing(Student::getProblem_solved).reversed()).limit(5)
 	                .collect(Collectors.toCollection(ArrayList::new));
 
 
 	        System.out.println("Top 5 students by age:");
-	        // Print the sorted list
+	       
 	        sortedStudents.forEach(student -> System.out.println(student.getName() + " " + student.getProblem_solved()+"  "+student.getGrade()));
 	    }
 	}
