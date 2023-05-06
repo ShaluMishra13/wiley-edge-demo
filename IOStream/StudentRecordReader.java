@@ -1,6 +1,4 @@
 package IOStream;
-
-
 import java.util.*;
 import java.io.*;
 
@@ -10,7 +8,6 @@ public class StudentRecordReader {
 	public StudentRecordReader(String inputFile) throws FileNotFoundException {
 		dataInput = new DataInputStream(new FileInputStream(inputFile));
 	}
-	
 	//data in byte
 	public List<Student> readAll() throws IOException {
 		List<Student> listStudent = new ArrayList<>();
@@ -29,7 +26,7 @@ public class StudentRecordReader {
 				listStudent.add(student);
 			}
 		} catch (Exception e) {
-			// TODO: handle exception
+			
 		}
 		
 		dataInput.close();
