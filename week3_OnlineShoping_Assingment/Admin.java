@@ -21,9 +21,9 @@ package week3_OnlineShoping_Assingment;
 		
 
 		public static int getNumberOfProducts() throws FileNotFoundException {
-			productReader =  new Scanner(new File(FilePath.Productpath));
+			productReader =  new Scanner(new File("C:\\Users\\SHALU\\eclipse-workspace1\\wileyjava\\src\\week3_OnlineShoping_Assingment\\data_product.csv"));
 			int noOfProducts=0;
-			try (BufferedReader reader = new BufferedReader(new FileReader(FilePath.Productpath))) {
+			try (BufferedReader reader = new BufferedReader(new FileReader("C:\\Users\\SHALU\\eclipse-workspace1\\wileyjava\\src\\week3_OnlineShoping_Assingment\\data_product.csv"))) {
 		          while (reader.readLine() != null) noOfProducts++;
 		      } catch (IOException e) {
 		          e.printStackTrace();
@@ -44,7 +44,7 @@ package week3_OnlineShoping_Assingment;
 			
 			
 			
-			File csvFile = new File(FilePath.Productpath);
+			File csvFile = new File("C:\\Users\\SHALU\\eclipse-workspace1\\wileyjava\\src\\week3_OnlineShoping_Assingment\\data_product.csv");
 			FileReader fileReader = new FileReader(csvFile);
 		    BufferedReader bufferedReader = new BufferedReader(fileReader);
 		    List<String> products = new ArrayList<>();
@@ -68,7 +68,7 @@ package week3_OnlineShoping_Assingment;
 		}
 		
 		public static void removeProduct(int prodID) throws IOException {
-			File csvFile = new File(FilePath.Productpath);
+			File csvFile = new File("C:\\Users\\SHALU\\eclipse-workspace1\\wileyjava\\src\\week3_OnlineShoping_Assingment\\data_product.csv");
 	        FileReader fileReader = new FileReader(csvFile);
 	        BufferedReader bufferedReader = new BufferedReader(fileReader);
 
@@ -106,7 +106,7 @@ package week3_OnlineShoping_Assingment;
 		}
 		
 		public static void editProduct(int prodID, Product product) throws IOException {
-			File csvFile = new File(FilePath.Productpath);
+			File csvFile = new File("C:\\Users\\SHALU\\eclipse-workspace1\\wileyjava\\src\\week3_OnlineShoping_Assingment\\data_product.csv");
 	        FileReader fileReader = new FileReader(csvFile);
 	        BufferedReader bufferedReader = new BufferedReader(fileReader);
 
@@ -294,7 +294,7 @@ package week3_OnlineShoping_Assingment;
 		
 		public static void viewCustomer() throws IOException {
 		
-			FileReader fileR = new FileReader(FilePath.Userpath);
+			FileReader fileR = new FileReader("C:\\Users\\SHALU\\eclipse-workspace1\\wileyjava\\src\\week3_OnlineShoping_Assingment\\data_user.csv");
 			System.out.println("\n********************************************\n");
 
 			String line = "";
@@ -312,7 +312,7 @@ package week3_OnlineShoping_Assingment;
 		
 	public static void deleteCustomer(String id) throws IOException {
 			
-			FileReader fileR = new FileReader(FilePath.Userpath);
+			FileReader fileR = new FileReader("C:\\Users\\SHALU\\eclipse-workspace1\\wileyjava\\src\\week3_OnlineShoping_Assingment\\data_user.csv");
 			BufferedReader br = new BufferedReader(fileR);
 			
 			int idxToDel=-1;
@@ -355,7 +355,7 @@ package week3_OnlineShoping_Assingment;
 	public static void writeCSV(ArrayList<String> data) {
 		FileWriter fw;
 		try {
-			fw = new FileWriter(FilePath.Userpath);
+			fw = new FileWriter("C:\\Users\\SHALU\\eclipse-workspace1\\wileyjava\\src\\week3_OnlineShoping_Assingment\\data_user.csv");
 			BufferedWriter bw = new BufferedWriter(fw);
 			
 			for(String str: data) {

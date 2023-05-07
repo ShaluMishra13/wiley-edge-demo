@@ -21,7 +21,7 @@ public class Customer {
 		String line = "";
 		String csvDelimiter = ",";
 
-		try (BufferedReader br = new BufferedReader(new FileReader(csvFile))) {
+		try (BufferedReader br = new BufferedReader(new FileReader("C:\\Users\\SHALU\\eclipse-workspace1\\wileyjava\\src\\week3_OnlineShoping_Assingment\\data_product.csv"))) {
 
 			while ((line = br.readLine()) != null) {
 				String[] productData = line.split(csvDelimiter);
