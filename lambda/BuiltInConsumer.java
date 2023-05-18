@@ -11,7 +11,7 @@ public class BuiltInConsumer {
     		 System.out.println("You are eligible for the job");
     	 else
     		 System.out.println("You are not egligible for teh job");
-      };
+      };el.accept(21, 81);
 	}
 
 }
